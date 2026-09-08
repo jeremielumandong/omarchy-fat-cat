@@ -64,11 +64,14 @@ Reduced motion shows stationary loaf poses with animation timers stopped.
 
 ## Data and privacy
 
-Settings, names and favorites are stored inline in your `arkane.fat-cat` entry
-in `~/.config/omarchy/shell.json`. Timer state and completed-session counts are
-saved atomically under `${XDG_STATE_HOME:-~/.local/state}/omarchy/fat-cat-session.json`.
-Writes happen on changes, not on every countdown tick. Runtime does not use
-network access, tracking, audio, a camera, or standing detection.
+Fat Cat keeps your settings and progress on your own computer. It does not
+require an account or send data to external services. It uses no analytics,
+tracking, microphone, camera, or standing detection.
+
+Settings, cat names, and favorites are saved in your Omarchy configuration at
+`~/.config/omarchy/shell.json`. Timer state and completed-session counts are
+saved in `omarchy/fat-cat-session.json` under your XDG state directory
+(`~/.local/state` by default). Saves are atomic and happen when state changes.
 
 Deadlines use the wall clock and include suspend time. After waking/restarting,
 an overdue focus session starts a full break; an overdue break completes once
@@ -79,16 +82,16 @@ panel displays a warning if saving fails.
 
 ## Update, disable, remove
 
-Git-managed installs update with `omarchy plugin update arkane.fat-cat`.
+For Git-managed installs, find Fat Cat in `omarchy plugin list` and use its
+identifier in `omarchy plugin update <plugin-id>`.
 Local installs update by rerunning `bash scripts/install-local.sh`.
 If QML hot reload retains old code, run `omarchy restart shell`; v2 restores its
 saved session. Upgrading from v1 resets the old in-memory timer once.
 
-```sh
-omarchy plugin disable arkane.fat-cat
-omarchy plugin enable arkane.fat-cat
-omarchy plugin remove arkane.fat-cat
-```
+To disable, re-enable, or remove it, use the same identifier with
+`omarchy plugin disable <plugin-id>`, `omarchy plugin enable <plugin-id>`, or
+`omarchy plugin remove <plugin-id>`. Replace `<plugin-id>` with the identifier
+shown by `omarchy plugin list`.
 
 Removing the plugin leaves the small session-state file for future reinstall.
 To reset collection progress too, remove that file explicitly while disabled.
