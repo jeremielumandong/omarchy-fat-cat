@@ -20,20 +20,22 @@ connection required at runtime.
 
 ## Install
 
+```sh
+omarchy plugin add https://github.com/jeremielumandong/omarchy-fat-cat.git --enable
+```
+
 Requires Omarchy's Quattro shell with the native plugin API and Quickshell 0.3.1
 or compatible newer runtime. Linux/Wayland only. Uses QtQuick, Quickshell.Io,
 Quickshell.Wayland, and the installed Omarchy Ui/Commons modules. `mkdir` from
 coreutils is the only subprocess, used to create the private state directory.
-No downloads, root privileges, build steps, or install hooks are needed.
+No additional dependency downloads, root privileges, build steps, or install hooks
+are needed.
 
 For a local checkout:
 
 ```sh
 bash scripts/install-local.sh
 ```
-
-Once this repository is public, install with `omarchy plugin add` followed by its
-GitHub clone URL and `--enable`. Do not install it as a Codex plugin.
 
 ## Use
 
