@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "arkane.fat-cat",
+  "name": "Fat Cat Pomodoro",
+  "version": "2.0.0",
+  "author": "arkane",
+  "description": "A cozy cat sanctuary for your Pomodoro breaks, with persistent timers, personalities, and a growing collection.",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "Widget.qml"
+  },
+  "barWidget": {
+    "displayName": "Fat Cat",
+    "category": "Time",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  },
+  "license": "MIT"
+}
