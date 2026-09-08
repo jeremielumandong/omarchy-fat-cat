@@ -49,17 +49,16 @@ of the plugin alone.
 
 ## Publish
 
-Publishing has not been performed by local installation.
+The public repository is https://github.com/jeremielumandong/omarchy-fat-cat.
+README, MIT license, generated-asset provenance, preview, and CI are included.
+The public HTTPS clone passed the native manifest validator. The plugin ID stays
+stable so existing installations retain their configuration.
 
-1. Create a public GitHub repository containing this folder at its root.
-2. Set the desired author/repository metadata and review the MIT license and
-   generated-asset provenance before the first public release.
-3. Push the reviewed commit, tag `v2.0.0`, and test installation from that URL.
-4. Open the marketplace's Submit a plugin issue form with the public repository
-   link, category `Productivity`, and tags `pomodoro`, `cats`, `focus`, `breaks`.
-5. Marketplace automation validates the submitted commit; maintainer approval
-   controls listing. Local validation is not marketplace approval.
+Submit using the official [issue form](https://github.com/omacom/omarchy-plugin-marketplace/issues/new?template=submit-plugin.yml).
+[MARKETPLACE.md](MARKETPLACE.md) contains the prepared fields and maintainer notes.
+Use category **Productivity** and the supported tags **Bar**, **Quickshell**.
+The form accepts one to three predefined tags; custom tags need a separate suggestion.
 
-Suggested listing: “A cozy cat sanctuary for your Pomodoro breaks. Persistent
-focus timers, six animated behaviors, cat personalities and a growing collection,
-with native Omarchy themes and a reduced-motion option.”
+Marketplace submission has not been sent. Automated validation checks the
+submitted repository commit before a maintainer approves the listing. Local
+validation and GitHub CI do not constitute marketplace approval.

@@ -20,6 +20,8 @@ runtime-created window types. It is not a clean lint pass; native test execution
 was used to check these bindings. Runtime logs also contain a host portal app-ID
 registration warning in the temporary test process.
 
-Marketplace approval, installation from a public GitHub URL, and testing on other
-Omarchy versions remain release follow-up checks. See RELEASE.md for commands
+A fresh clone from the public GitHub HTTPS URL passed the native manifest
+validator. This checks the downloaded package; it is not an end-to-end install
+on a fresh desktop. Marketplace approval, a fresh-desktop installation, and
+testing on other Omarchy versions remain release follow-up checks. See RELEASE.md for commands
 and the broader manual compatibility checklist.
